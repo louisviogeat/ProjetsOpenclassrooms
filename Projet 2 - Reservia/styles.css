@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(Raleway/static/Raleway-Medium.ttf);
+}
+
+body {
+    font-family: 'Raleway';
+    margin-left: 25px;
+}
+
+/* Style du Header */
+
+#logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 2%;
+    position: absolute;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
+header h1 {
+    margin-top: 50px;
+    font-size: large;
+}
+
+h2 {
+    font-size:small;
+}
+
+p {
+    font-size: small;
+}
+
+#filtres ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#filtres li {
+    padding: 5px;
+    display: flex;
+}
+
+/* Style de la section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#accomodations {
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    width: 800px;
+    padding: 10px;
+    flex: 1.2;
+    position: relative;
+}
+#inAccomodations {
+    display: flex;
+   flex: 1;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+}
+
+.accomodationPhoto {
+    display: flex;
+    border: 2px solid mediumaquamarine;
+    flex-direction: column;
+    width: auto;
+    flex-wrap: wrap;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.accomodationPhoto img {
+    width: 200px;
+    height: 100px;
+}
+
+#popular {
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    width: 300px;
+    height: 800px;
+    flex-direction: column;
+    flex: 3;
+    position: relative;
+}
+
+#inPopular {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.popularPhoto {
+    display: flex;
+    border: 2px solid mediumaquamarine;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.popularPhoto img {
+    width: 200px;
+    height: 100px;
+}
