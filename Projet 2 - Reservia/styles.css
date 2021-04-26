@@ -8,6 +8,15 @@ body {
     margin-left: 25px;
 }
 
+h2 {
+    font-size:small;
+    font-weight: bold;
+}
+
+p {
+    font-size: small;
+}
+
 /* Style du Header */
 
 #logo {
@@ -16,6 +25,14 @@ body {
     margin-left: 2%;
     position: absolute;
 }
+
+header h1 {
+    margin-top: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Style de la barre de navigation */
 
 nav ul {
     display: flex;
@@ -30,98 +47,241 @@ nav li {
     text-decoration: none;
 }
 
+/* Syle de la barre de recherche */
 
-
-header h1 {
-    margin-top: 50px;
-    font-size: large;
+#search {
+    border: 1px solid rgb(202, 196, 196);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: space-between;
 }
 
-h2 {
-    font-size:small;
+#search i {
+    background-color: rgb(238, 235, 235);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
 }
 
-p {
-    font-size: small;
+#search input {
+    border: none;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+header button {
+    background-color: rgb(0, 102, 255);
+    color: white;
+    height: 30px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+/* Syle de la zone de filtres */
+
+#filtres {
+    display: flex;
+    align-items: center;
 }
 
 #filtres ul {
     list-style-type: none;
     display: flex;
+    justify-content: space-around;
+    width: 650px;
 }
 
 #filtres li {
-    padding: 5px;
+  
     display: flex;
+    border: 2px solid gainsboro;
+    border-left-style: none;
+    border-radius: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+}
+
+#filtres i {
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(208, 224, 255);
+    color: rgb(43, 108, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filtres p {
+    display: flex;
+    padding-left: 5px;
+}
+
+/* Style de la div infos (petit i + phrase) */
+
+#infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+}
+
+#infos i {
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+    color: rgb(43, 108, 228);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
 }
 
 /* Style de la section */
 
-section {
+/* Style des asides Hébergements et Populaires */
+
+#container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
-#accomodations {
-    background-color: rgb(236, 236, 236);
+
+.element {
     border-radius: 20px;
-    width: 800px;
-    padding: 10px;
-    flex: 1.2;
-    position: relative;
+    height: 600px;
+    padding: 20px;
 }
+
+.element:nth-child(1) {
+    background-color: rgb(241, 241, 239);
+    width: 700px;
+}
+
+.element:nth-child(2) {
+    background-color: rgb(241, 241, 239);
+    width: 400px;
+}
+
+.stars {
+    font-size: x-small;
+}
+
+/* Style de l'aside Hébergement */
+
 #inAccomodations {
     display: flex;
-   flex: 1;
-   flex-wrap: wrap;
-   justify-content: space-around;
-
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .accomodationPhoto {
-    display: flex;
-    border: 2px solid mediumaquamarine;
-    flex-direction: column;
-    width: auto;
-    flex-wrap: wrap;
-    width: 200px;
-    border-radius: 25px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid white;
+    height: 200px;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
 }
 
 .accomodationPhoto img {
+    object-fit: cover;
     width: 200px;
     height: 100px;
+    border-radius: 20px 20px 0 0;
 }
 
-#popular {
-    display: flex;
-    background-color: rgb(236, 236, 236);
-    border-radius: 20px;
-    width: 300px;
-    height: 800px;
-    flex-direction: column;
-    flex: 3;
-    position: relative;
-}
-
-#inPopular {
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+/* Style de l'aside Populaire */
 
 .popularPhoto {
     display: flex;
-    border: 2px solid mediumaquamarine;
-    flex-direction: row;
-    width: auto;
-    flex-wrap: wrap;
-    width: 200px;
-    border-radius: 25px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
+
 }
 
 .popularPhoto img {
+    object-fit: cover;
+    width: 100px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 20px 0 0 20px;
+}
+
+#mostPopular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.popularText {
+    padding: 10px;
+}
+
+/* Style de l'aside Activités */
+
+#activities {
+    border: 2px solid blueviolet;
+    height: 600px;
+}
+
+#activitiesPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.activitiesImages {
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
+    max-height: 300px;
     width: 200px;
-    height: 100px;
+}
+
+.activitiesImages img {
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 500px;
+    border-radius: 10px 10px 0 0;
+}
+
+#pomegues-frioul img{
+    height: 200px;
+}
+
+#garde-longchamp img {
+    height: 200px;
+}
+
+/* Style du footer */
+
+#footerContainer {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerElement {
+    border: 2px solid black;
+    width: 300px;
 }
