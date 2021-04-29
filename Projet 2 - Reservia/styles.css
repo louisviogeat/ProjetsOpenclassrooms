@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Raleway';
-    margin-left: 25px;
+    margin: auto 10% auto 10%;
 }
 
 h2 {
@@ -22,7 +22,6 @@ p {
 #logo {
     width: 100px;
     height: 50px;
-    margin-left: 2%;
     position: absolute;
 }
 
@@ -30,6 +29,10 @@ header h1 {
     margin-top: 50px;
     font-size: large;
     font-weight: bold;
+}
+
+header {
+    margin-left: 3%;
 }
 
 /* Style de la barre de navigation */
@@ -210,7 +213,7 @@ header button {
     border: 2px solid white;
     border-radius: 20px;
     background-color: white;
-    margin: 10px;
+    margin: 28px;
     -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
 
@@ -238,8 +241,11 @@ header button {
 /* Style de l'aside Activités */
 
 #activities {
-    border: 2px solid blueviolet;
-    height: 600px;
+    height: 450px;
+}
+
+#activities h1 {
+    margin-left: 3%;
 }
 
 #activitiesPhotos {
@@ -253,35 +259,71 @@ header button {
     border-radius: 10px 10px 10px 10px;
     -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18); 
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.18);
-    max-height: 300px;
-    width: 200px;
+    max-height: 340px;
+    width: 250px;
 }
 
 .activitiesImages img {
     object-fit: cover;
-    max-width: 200px;
+    max-width: 250px;
     max-height: 500px;
     border-radius: 10px 10px 0 0;
 }
 
-#pomegues-frioul img{
-    height: 200px;
+#vieuxPort img {
+    height: 300px;
+    width: 250px;
+}
+
+#pomegues-frioul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
+}
+
+#pomegues-frioul img {
+    height: 100px;
+    width: 250px;
+}
+
+#calanques img {
+    height: 300px;
+    width: 250px;
+}
+
+#garde-longchamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
 }
 
 #garde-longchamp img {
-    height: 200px;
+    height: 100px;
+    width: 250px;
 }
 
 /* Style du footer */
 
 #footerContainer {
-    background-color: cadetblue;
+    background-color: rgb(253, 242, 230);
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footerElement {
-    border: 2px solid black;
     width: 300px;
+}
+
+.footerElement ul {
+    list-style: none;
+}
+
+.footerElement li {
+    margin-top: 10px;
+}
+
+.footerElement h2 {
+    margin-left: 13%;
 }
